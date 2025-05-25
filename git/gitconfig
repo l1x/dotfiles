@@ -1,0 +1,41 @@
+[column]
+  ui = auto
+[branch]
+  sort = -committerdate
+[tag]
+  sort = version:refname
+[push]
+  default = simple
+  autoSetupRemote = true
+  followTags = true
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
+[commit]
+  verbose = true
+[include]
+  path = ~/delta.themes.gitconfig
+[user]
+  name = Istvan
+  email = dev@l1x.be
+  signingkey = ~/.ssh/id_l1x.be
+[core]
+  editor = nvim
+  pager = delta
+[delta]
+  navigate = true
+  side-by-side = true
+  features = arctic-fox
+[init]
+  defaultBranch = main
+[interactive]
+  diffFilter = delta --color-onlys
+[commit]
+  gpgsign = true
+[gpg]
+  format = ssh
+[merge]
+  conflictstyle = zdiff3
+[gpg "ssh"]
+  allowedSignersFile = ~/.ssh/allowed_signers
